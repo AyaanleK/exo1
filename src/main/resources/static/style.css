@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 15px;
-    background: #1a1a1a;;
+    background: #1a1a1a;
 }
 *{
     margin: 0;
@@ -393,4 +393,16 @@ li{
 .footer-col .social-link a:hover{
     color: #24262b;
     background-color: #59b700;
+}
+.forbruger-content {
+    margin-top: 90px;
+    height: 1000px;
+    width: 100%;
+    background: #92c26b;
+}
+.forbruger-text {
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DanmarkModMadspild</title>
+    <link rel="icon" href="pictures/header%20logo.png">
+    <link rel="stylesheet" th:href="@{/style.css}" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">
+        <table>
+            <td><img src="pictures/header%20logo.png" alt="logo" class="header-logo-img"></td>
+            <td><div class="header-logo-text">Vi spilder ikke mad</div></td>
+        </table>
+    </div>
+    <table>
+        <td class="header-table"><h2 class="block2">Doner</h2></td>
+        <td class="header-table"><a href="faq.html"><h2 class="block3">FAQ</h2></a></td>
+        <td class="house-icon">
+            <a href="index.html">
+                <img src="pictures/black-house.png" alt="House icon" class="house-icon" title="Hjem">
+            </a>
+        </td>
+        <td class="header-table"><h2 class="block2">Om Os</h2></td>
+        <td class="header-table"><h2 class="block2">Social Media</h2></td>
+    </table>
+</header>
+
+<div class="forbruger-content">
+    <p class="forbruger-text">
+        Der er ingen tvivl om at madspild er dårligt for miljøet, men heldigvis er der mange ting man som forbruger, virksomhed eller organisation kan gøre.
+
+        Klik på den sektion som beskriver dig.
+        Forbruger
+        Virksomhed
+        Organisation
+    </p>
+</div>
+
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Navne</h4>
+                <ul>
+                    <li> <a href="page1.5.html">Om Os</a> </li>
+                    <li> <a href="page1.html">Vores service</a> </li>
+                    <li> <a href="page1.html">Policy</a> </li>
+                    <li> <a href="page1.html">Frivillig program</a> </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Tel: +45 22334455</li>
+                    <li>Adresse: Rødkilevej 11 </li>
+                    <li>Email: Madspild@mad.dk</li>
+                    <li>CVR nr 38 21 72 91</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="social-link">
+                    <a href="#"> <i class="fab fa-facebook-f"> </i> </a>
+                    <a href="#"> <i class="fab fa-github"> </i> </a>
+                    <a href="#"> <i class="fab fa-discord"> </i> </a>
+                    <a href="#"> <i class="fab fa-youtube"> </i> </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
