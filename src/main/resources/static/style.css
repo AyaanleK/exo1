@@ -306,27 +306,37 @@ footer {
 }
 /* Sponsorer */
 .sponsorer {
-    text-align: center;
     display: flex;
     background: #fff;
     width: 100%;
-    height: 200px;
+    justify-content: center;
+    justify-items: center;
 }
 .sponsorer-table {
     border-spacing: 30px;
+    height: max-content;
 }
-.sponsorer-salling {
+.sponsorer-layout {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+    height: 100%;
 }
-.sponsorer-salling-img {
+.sponsorer-layout-img {
     max-width: 300px;
 }
-.sponsorer-salling-text {
-    position: absolute;
-    margin-top: 60px;
-}
 
+tr {
+    text-align: center;
+}
+tr,td {
+    height: 100%;
+}
+td img {
+    width: 100%;
+    height: auto;
+}
 
 /* Footer */
 
@@ -407,11 +417,13 @@ li{
     margin-top: 90px;
     height: 1000px;
     width: 100%;
-    background: #d6dcdc;
 }
 .forbruger-text {
     padding-top: 200px;
     margin-left: auto;
     margin-right: auto;
     width: 800px;
+}
+.hvad-kan-man-gøre {
+    background: #d6dcdc;
 }
