@@ -135,10 +135,10 @@
             <div class="footer-col">
                 <h4>Navne</h4>
                 <ul>
-                    <li> <a href="page1.5.html">Om Os</a> </li>
-                    <li> <a href="page1.html">Vores service</a> </li>
-                    <li> <a href="page1.html">Policy</a> </li>
-                    <li> <a href="page1.html">Frivillig program</a> </li>
+                    <li> <a href="#">Om Os</a> </li>
+                    <li> <a href="#">Vores service</a> </li>
+                    <li> <a href="#">Policy</a> </li>
+                    <li> <a href="#">Frivillig program</a> </li>
                 </ul>
             </div>
 
@@ -165,34 +165,6 @@
     </div>
 </footer>
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
 
 </body>
 </html>
