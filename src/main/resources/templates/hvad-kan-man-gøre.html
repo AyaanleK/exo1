@@ -7,7 +7,7 @@
     <link rel="stylesheet" th:href="@{/style.css}" href="../static/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="hvad-kan-man-gøre">
+<body>
 <header class="header">
     <div class="header-logo">
         <table>
@@ -16,7 +16,7 @@
         </table>
     </div>
     <table>
-        <td class="header-table"><h2 class="block2">Doner</h2></td>
+        <td class="header-table"><a href="hvad-kan-man-gøre.html"><h2 class="block2">Hvad kan man gøre?</h2></a></td>
         <td class="header-table"><a href="faq.html"><h2 class="block3">FAQ</h2></a></td>
         <td class="house-icon">
             <a href="index.html">
@@ -28,15 +28,61 @@
     </table>
 </header>
 
-<div class="forbruger-content">
-    <p class="forbruger-text">
-        Der er ingen tvivl om at madspild er dårligt for miljøet, men heldigvis er der mange ting man som forbruger, virksomhed eller organisation kan gøre.
+<div class="container">
+    <img src="pictures/Food-waste.gif" alt="foodwaste" style="width:100%;">
+    <div class="text-block">
+        <h2 class="text-block-heading"><b>- Selvhjælp - </b></h2>
+        <p><b style="color:#30d8de;"> Hvordan kan vi selv gøre det bedre. </b></p>
+    </div>
+</div>
 
-        Klik på den sektion som beskriver dig.
-        Forbruger
-        Virksomhed
-        Organisation
+<div class="content-wrap item-details divider">
+    <p class="forbruger-text">
+    <h3>En lille quiz fra Rema1000 om madspild <a href="https://madspild.rema1000.dk/quiz" style="color:#1967c4;"><i>HER</i></a>.</h3>
     </p>
+    <hr>
+    <section class="job-item">
+    <p>
+        Hver dag bliver der smidt betydelige mængder mad ud i de danske husholdninger.
+        Men det største madspild sker inden maden bliver solgt til forbrugerne, dvs. i processen fra produktion til salg.
+
+        Spild af mad har store miljø- og klimamæssige konsekvenser, og det er noget, alle kan være med til at undgå.
+        Vi kan måske ikke rette på det ved at spise al den mad, der ellers ville være blevet smidt ud, men udenlandske undersøgelser peger på, at omkring halvdelen af den mad, der ryger i skraldespanden, kunne være spist.
+
+        Madspild handler ikke kun om, hvad der går til spilde i husholdningerne.
+        Det handler også om spildet i hele kæden, dvs. under dyrkning og produktion, transport, håndtering og indpakning i butikkerne samt tilberedning og servering i restauranterne m.m.
+        <h6><i>Kilde: <a href="https://www.foedevarestyrelsen.dk/Leksikon/Sider/Madspild.aspx"style="color:#1967c4;" >https://www.foedevarestyrelsen.dk/Leksikon/Sider/Madspild.aspx</a></i>.</h6>
+    </p>
+    </section>
+    <section class="job-item">
+        <p>
+        <h4>Sådan kan den private husholdning undgå madspild.</h4>
+            Som forbruger kan du selv gøre noget for at undgå madspild:
+            Planlæg dine madindkøb, og køb kun den mad, der er behov for.
+            Spis lokale produkter, så skal de ikke holde sig længe under transport.
+            Bliv bedre til at bruge rester i nye retter, men hold stadig øje med holdbarheden.
+            Opbevar maden ved den rigtige temperatur, så du smider mindre mad ud, der er blevet dårlig.
+            Køl madrester, der skal gemmes, hurtigt ned, eller frys dem evt. i små pakker.
+            Læs mere i Fødevarestyrelsens guides længere nede på siden.
+        </p>
+    </section>
+            <section class="job-item">
+    <p>
+                    Her kan du tilmelde dig vores nyhedsbrev om bland andet hvordan man undgår madspild og hvordan man kan hjælpe med at forhindre det.
+    <form action="/action_page.php">
+        <fieldset>
+            <legend> Dine informationer: </legend>
+            <label for="fname">Fornavn:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Efternavn:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset>
+    </form>
+    </p>
+    </section>
+
 </div>
 
 <footer class="footer">

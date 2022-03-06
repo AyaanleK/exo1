@@ -76,11 +76,8 @@ img {
     background: rgba(23, 21, 21, 0.85);
 }
 /* Container holding the image and the text */
-.container {
-    position: relative;
-}
 
-/* Bottom right text */
+/* Intro text */
 .text-block {
     position: absolute;
     top: 50%;
@@ -96,9 +93,6 @@ img {
 }
 .text-block-heading {
     padding-bottom: 20px;
-}
-.text-block-top {
-
 }
 @keyframes fade-in {
     0% {
