@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DanmarkModMadspild</title>
-    <link rel="icon" href="../static/pictures/header%20logo.png">
+    <link rel="icon" href="../static/pictures/header_logo.png">
     <link rel="stylesheet" th:href="@{/style.css}" href="../static/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,16 +11,16 @@
 <header class="header">
     <div class="header-logo">
         <table>
-            <td><img src="../static/pictures/header%20logo.png" alt="logo" class="header-logo-img"></td>
+            <td><img src="../static/pictures/header_logo.png" th:src="@{/pictures/header_logo.png}" alt="logo" class="header-logo-img"></td>
             <td><div class="header-logo-text">Vi spilder ikke mad</div></td>
         </table>
     </div>
     <table>
-        <td class="header-table"><a href="hvad-kan-man-gøre.html"><h2 class="block2">Hvad kan man gøre?</h2></a></td>
-        <td class="header-table"><a href="faq.html"><h2 class="block3">FAQ</h2></a></td>
+        <td class="header-table"><a href="hvad-kan-man-gøre"><h2 class="block2">Hvad kan man gøre?</h2></a></td>
+        <td class="header-table"><a href="#"><h2 class="block3">FAQ</h2></a></td>
         <td class="house-icon">
-            <a href="index.html">
-                <img src="../static/pictures/black-house.png" alt="House icon" class="house-icon" title="Hjem">
+            <a href="index">
+                <img src="../static/pictures/black-house.png" th:src="@{/pictures/black-house.png}" alt="House icon" class="house-icon" title="Hjem">
             </a>
         </td>
         <td class="header-table"><h2 class="block2">Om Os</h2></td>
@@ -29,7 +29,7 @@
 </header>
 
 <div class="container">
-    <img src="../static/pictures/Food-waste.gif" alt="foodwaste" style="width:100%;">
+    <img src="../static/pictures/Food-waste.gif" th:src="@{/pictures/Food-waste.gif}" alt="foodwaste" style="width:100%;">
     <div class="text-block">
         <h2 class="text-block-heading"><b>- Selvhjælp - </b></h2>
         <p><b style="color:#30d8de;"> Hvordan kan vi selv gøre det bedre. </b></p>
